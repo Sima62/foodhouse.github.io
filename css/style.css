@@ -1,0 +1,562 @@
+@font-face {
+  font-family: "Raleway-regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Raleway-semi";
+  src: url(../fonts/Raleway-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Raleway-black";
+  src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+  font-family: "Raleway-italic";
+  src: url(../fonts/Raleway-Italic.ttf);
+}
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url(../fonts/Raleway-ExtraBoldItalic.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(105, 5, 5);
+  margin: 5px;
+}
+.burger {
+  display: none;
+}
+h1 {
+  text-size-adjust: 400px;
+  color: aliceblue;
+  font-family: "Yuji Mai", serif;
+}
+.theory {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px 50px;
+}
+.container1 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 20%;
+}
+p {
+  font-size: 120%;
+}
+.pic {
+  padding: 50px;
+  padding-left: 140px;
+  justify-content: space-around;
+  background-color: rgb(141, 60, 60);
+}
+
+@media screen and( max-width:1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+@media screen and( max-width:768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: brown;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  width: 80%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.newnav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(27, 25, 25);
+}
+.aboutb {
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.abouta {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(27, 25, 25);
+}
+.aboutb li {
+  padding-left: 0px;
+  list-style: none;
+}
+.aboutb a {
+  text-size-adjust: 40px;
+  text-transform: uppercase;
+  display: flex;
+  color: whitesmoke;
+  font-family: "Zen Antique", serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+body {
+  height: fit-content;
+  -webkit-font-smoothing: antialised;
+}
+.rating .fa {
+  color: orange;
+  margin-bottom: 0.5rem;
+}
+.topbar {
+  width: 100%;
+  background: rgb(17, 17, 17);
+  color: white;
+  display: flex;
+}
+.logo img {
+  max-width: 30%;
+  border-radius: 80%;
+}
+.auth a {
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  display: flex;
+}
+
+.auth {
+  float: right;
+  display: flex;
+  margin-left: 750px;
+}
+.auth img {
+  width: 25%;
+  margin-top: 1rem;
+}
+.icon a img {
+  width: 10%;
+  border-radius: 30%;
+}
+
+.icon a {
+  margin-right: 1rem;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  padding-left: 710px;
+  display: flex;
+}
+.contact {
+  display: flex;
+}
+.top img {
+  width: 40px;
+}
+h5 {
+  font-family: "Raleway-italic";
+  margin-bottom: 0.25rem;
+}
+h6 {
+  font-family: "Raleway-semi";
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.01rem;
+}
+.navbar a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(19, 19, 1);
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  text-align: justify;
+  margin-top: 30px;
+  font-family: "Raleway-ExtraBold";
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+  transition: all 0.3sec ease;
+}
+a.active,
+a:hover {
+  background: rgb(189, 130, 142);
+}
+.magic-shaddow {
+  box-shadow: 5px 10px 3px rgb(143, 97, 97);
+  padding-bottom: 20px;
+}
+.main .fhalf {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.frst {
+  font-size: 90px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.sec {
+  margin-left: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  font-size: 90px;
+}
+p {
+  color: maroon;
+}
+.tagline {
+  font-size: 25px;
+  color: black;
+}
+.shalf img {
+  width: 80%;
+  margin-left: 100px;
+  margin-top: 60px;
+  border: 5px solid rgb(235, 227, 227);
+}
+.one {
+  padding-top: 10px;
+  display: flex;
+}
+.one h3 {
+  padding-left: 100px;
+}
+.last {
+  background-color: rgb(87, 84, 84);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.Copyright {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.icon {
+  padding-left: 600px;
+  align-items: center;
+}
+.footer {
+  padding-bottom: px;
+  background-color: rgb(194, 188, 188);
+}
+section {
+  padding: 4rem 0;
+}
+.our-menu {
+  background-color: rgba(172, 89, 99, 0.185);
+}
+.top-picks {
+  background-color: rgba(206, 33, 47, 0.185);
+}
+.section-heading {
+  font-family: "Raleway-bold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.food-card {
+  background-color: rgb(250, 245, 245);
+  padding: 2.5rem 10rem;
+  border-radius: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.product-image {
+  width: 40%;
+  height: 200px;
+  object-fit: contain;
+}
+h2 {
+  font-family: "Raleway-bold";
+  font-size: 1.3rem;
+  margin-bottom: 0.15rem;
+}
+.food-slider {
+  justify-content: space-between;
+  display: flex;
+}
+.product-image img {
+  height: 180px;
+}
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 8%;
+  height: 20%;
+  border: 10px;
+  border-radius: 10px;
+  background-color: rgb(196, 136, 149);
+  text-align: center;
+  cursor: pointer;
+}
+.btn {
+  padding-top: 20px;
+  justify-content: center;
+}
+.main {
+  padding-bottom: 120px;
+}
+section.top-picks .food-slider .food-card button {
+  font-family: "Raleway-medium";
+  color: rgb(14, 12, 13);
+  background: rgb(228, 213, 213);
+  border: 2px solid rgb(95, 92, 92);
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+section.top-picks .food-slider .food-card .price {
+  font-family: "Raleway-medium";
+  color: red;
+  margin-bottom: 1rem;
+}
+section.top-pickss .food-slider .food-card button:hover {
+  background: blue;
+  color: palevioletred;
+}
+.slick-slide {
+  margin: 0 27px;
+}
+.slick-list {
+  margin: 0 -27px;
+}
+.top-picks .slider-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--primary);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 46%;
+  left: -3rem;
+  z-index: 1;
+}
+.next-btn {
+  position: absolute;
+  top: 46%;
+  right: -3rem;
+  z-index: 1;
+}
+.top-picks .slider {
+  position: relative;
+}
+.top-picks .btn-wrapper {
+  margin-top: 2rem;
+}
+.slick-track {
+  padding: 1rem 0;
+}
+section.subscribe {
+  background: rgb(247, 246, 246);
+}
+section.subscribe .container > div:first-child img {
+  width: 90%;
+}
+section.subscribe .container div:first-child {
+  flex: 1;
+}
+section.subscribe .container div:last-child {
+  flex: 1;
+}
+
+section.subscribe h1 {
+  font-family: "Raleway-bold";
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+section.subscribe p {
+  font-family: "Raleway-medium";
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+section.subscribe .input-wrap {
+  background: rgb(241, 238, 238);
+  display: flex;
+  padding: 0.3rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+section.subscribe .input-wrap input {
+  width: 100%;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+section.subscribe .input-wrap input:focus {
+  outline: none;
+}
+section.subscribe .input-wrap button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: rgb(185, 132, 126);
+  color: rgb(39, 38, 36);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  outline: none;
+}
+section.subscribe .input-wrap button:hover {
+  background: rgb(221, 221, 233);
+}
+section.latest-news {
+  background: rgb(236, 236, 228);
+  position: relative;
+  z-index: 0;
+}
+section.latest-news .article-wrapper {
+  display: flex;
+  margin-right: -2rem;
+}
+.latest-news .article-wrapper .card {
+  margin-right: 2rem;
+  background: rgb(248, 245, 245);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.latest-news .article-wrapper .card img {
+  width: 100%;
+}
+.latest-news .article-wrapper .card .card-content {
+  padding: 2rem;
+}
+.latest-news .article-wrapper .card .card-content .post-meta {
+  margin-bottom: 1rem;
+}
+.latest-news .article-wrapper .card .card-content .post-meta .comment-count {
+  margin-left: 1rem;
+}
+.latest-news .article-wrapper .card .card-content h2 {
+  font-family: "Raleway-bold";
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.latest-news .article-wrapper .card .card-content p {
+  line-height: 1.6;
+}
+.latest-news .btn-wrapper {
+  margin-top: 2rem;
+}
+.btn-secondary {
+  background: green;
+  color: blue;
+}
+.btn-secondary:hover {
+  background: rgb(235, 222, 235);
+  color: aqua;
+  border: 1px solid rgb(255, 17, 0);
+}
+.text-center {
+  text-align: left;
+}
+.latest-news .btn-wrapper {
+  margin-top: 2rem;
+  padding: 10px 50px;
+}
